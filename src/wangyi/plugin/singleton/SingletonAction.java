@@ -1,6 +1,6 @@
 package wangyi.plugin.singleton;
 
-import com.intellij.codeInsight.generation.actions.BaseGenerateAction;
+import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import wangyi.plugin.singleton.builder.*;
 
@@ -8,9 +8,9 @@ import wangyi.plugin.singleton.builder.*;
  * author WangYi
  * created on 2017/1/14.
  */
-public class SingletonAction extends BaseGenerateAction implements OnPatternSelectedListener {
+public class SingletonAction extends AnAction implements OnPatternSelectedListener {
     public SingletonAction() {
-        super(null);
+        super();
     }
 
     private AnActionEvent mEvent;
